@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+</head>
+<body>
+    <form action="registration.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" >
+        <br>
+
+        <label for="email">Email ID:</label>
+        <input type="email" name="email" id="email" >
+        <br>
+
+        <label for="dept">Department:</label>
+        <select name="dept" id="dept" >
+            <option value="">Select</option>
+            <option value="CSE">CSE</option>
+            <option value="AIML">AIML</option>
+            <option value="AIDS">AIDS</option>
+        </select>
+        <br>
+
+        <label for="year">Year:</label>
+        <select name="year" id="year" >
+            <option value="">Select</option>
+            <option value="1st year">1st year</option>
+            <option value="2nd year">2nd year</option>
+            <option value="3rd year">3rd year</option>
+            <option value="last year">Last year</option>
+        </select>
+        <br>
+
+        <label for="number">Roll Number:</label>
+        <input type="text" name="number" id="number" >
+        <br>
+
+        <input type="submit" name="submit" value="Submit">
+    </form>
+</body>
+</html>
