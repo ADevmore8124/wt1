@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter Registration</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        input {
+            padding: 8px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>*   Voter Registration Form  *</h2>
+    
+    Enter the Name of Voter : 
+    <input id="name" type="text" placeholder="name" required><br><br>
+    
+    Enter the DOB of Voter :
+    <input id="dob" type="date" required><br><br>
+    
+    Enter the Aadhar Number :
+    <input id="aadhar" type="number" placeholder="Aadhar (12 digits)" required><br><br>
+    
+    Enter the Email-Id :
+    <input id="email" type="email" placeholder="email" required><br><br>
+    
+    Enter the Address :
+    <input id="address" type="text" placeholder="address" required><br><br>
+    
+    <input id="submit" type="button" value="Submit">
+    
+    <script>
+        document.getElementById("submit").addEventListener("click", function() {
+            let name = document.getElementById("name").value.trim();
+            let dob = document.getElementById("dob").value;
+            let aadhar = document.getElementById("aadhar").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let address = document.getElementById("address").value.trim();
+
+            // Name validation (only letters)
+            let nameRegex = /^[A-Za-z\s]+$/;
+            if (!nameRegex.test(name)) {
+                alert("Name must contain only letters and spaces.");
+                return;
+            }
+
+            // Date of Birth validation (18+ years old)
+            let today = new Date();
+            let birthDate = new Date(dob);
+            let age = today.getFullYear() - birthDate.getFullYear();
+            let monthDiff = today.getMonth() - birthDate.getMonth();
+            if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+                age--;
+            }
+            if (age < 18) {
+                alert("You must be at least 18 years old to register.");
+                return;
+            }
+
+            // Aadhar Number validation (12 digits)
+            let aadharRegex = /^\d{12}$/;
+            if (!aadharRegex.test(aadhar)) {
+                alert("Aadhar number must be exactly 12 digits.");
+                return;
+            }
+
+            // Email validation
+            let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!emailRegex.test(email)) {
+                alert("Enter a valid email address.");
+                return;
+            }
+
+            // Address validation (should not be empty)
+            if (address.length < 5) {
+                alert("Address should be at least 5 characters long.");
+                return;
+            }
+
+            alert("Form submitted successfully!");
+        });
+    </script>
+</body>
+</html>
