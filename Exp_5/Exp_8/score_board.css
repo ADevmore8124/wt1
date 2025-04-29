@@ -1,0 +1,78 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f8ff;
+    padding: 20px;
+}
+
+.scoreboard {
+    background: #ffffff;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    table-layout: fixed;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+th:nth-child(1), td:nth-child(1) { width: 20%; } /* Name */
+th:nth-child(2), td:nth-child(2) { width: 7%; }  /* Runs */
+th:nth-child(3), td:nth-child(3) { width: 7%; }  /* Balls */
+th:nth-child(4), td:nth-child(4) { width: 7%; }  /* 4s */
+th:nth-child(5), td:nth-child(5) { width: 7%; }  /* 6s */
+th:nth-child(6), td:nth-child(6) { width: 10%; } /* SR */
+th:nth-child(7), td:nth-child(7) { width: 42%; text-align: left; } /* How Out */
+
+th {
+    background-color: #008cba;
+    color: white;
+    font-size: 16px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f9ff;
+}
+
+tr:hover {
+    background-color: #e1f5ff;
+}
+
+#extras, #total, #fallOfWickets {
+    margin-top: 15px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#extras {
+    background-color: #eaf8e9;
+}
+
+#total {
+    background-color: #fef3c7;
+    font-weight: bold;
+}
+
+#fallOfWickets {
+    background-color: #fff5f5;
+}

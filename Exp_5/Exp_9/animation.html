@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script >
+        $('document').ready(function(){
+            $('button').click(function() {
+                $('#peacock1').animate({right:'1000px'},7000,declaration);
+                $('#peacock2').animate({right:'1000px'},6000,);
+            }); 
+        });
+        function declaration(){
+            alert("peacock2 is winner")
+        }
+    </script>
+
+    <style>
+      body {
+  background: url('back.jpg') no-repeat center center fixed;
+  background-size: cover;}
+  .peacock{
+    position: absolute;
+            top: 400px; /* Adjust vertical position */
+            left: 1300px; 
+  }
+  #peacock1{
+    height: 200px;
+            width: 200px;
+            position: absolute;
+            right: -200px;
+            margin-top: 20px;
+  }
+#peacock2{
+    height: 200px;
+            width: 200px;
+            position: absolute;
+            right: -200px;
+            margin-top: 150px;
+  }
+    </style>
+</head>
+<body>
+    <button>Start Animation</button>
+    <div class ="peacock">
+       <div > <img id ="peacock1" src="peacock.png"></div>
+       <div><img id="peacock2" src="peacock.png"></div>
+    </div>
+ 
+</body>
+</html>
