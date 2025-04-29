@@ -1,0 +1,54 @@
+ body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f8f9fa;
+        }
+        table {
+            width: 70%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-size: 18px;
+        }
+        th, td {
+            text-align: left;
+            border: 1px solid black;
+            padding: 8px;
+        }
+        h1, h2 {
+            text-align:left;
+            font-size: 24px;
+        }
+        hr{
+          color:solid black;
+          size:66px;
+          background-color:black;
+        }
+        p, ul, ol {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        ul, ol {
+            margin: 10px 20px;
+            list-style-type:disc;
+        }
+        .contact-info, .undertaking {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-size: 22px;
+            margin-top: 30px;
+        }
+        .signature {
+            text-align:right; 
+            padding-right:20px;
+        }
+       .undertaking{
+           text-align:left; 
+        }
+       img{
+          border: solid black 2px;
+          float:right;
+          width:200px;
+          height:150px;
+       }
