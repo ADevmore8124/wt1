@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="student.xsl"?>
+
+<!DOCTYPE student [
+  <!ELEMENT student (name, rollno, branch, subjects)>
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT rollno (#PCDATA)>
+  <!ELEMENT branch (#PCDATA)>
+  <!ELEMENT subjects (subject+)>
+  <!ELEMENT subject (#PCDATA)>
+]>
+<student>
+  <name>Arpita Dhanpal Devore</name>
+  <rollno>23</rollno>
+  <branch>Computer Science</branch>
+  <subjects>
+    <subject>XML and Web Technologies</subject>
+    <subject>Database Management System</subject>
+    <subject>Software Engineering</subject>
+  </subjects>
+</student>

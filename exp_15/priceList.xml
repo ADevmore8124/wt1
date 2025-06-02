@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<priceList>
+  <item>
+    <name>Chocolate Ice Cream</name>
+    <price>50</price>
+  </item>
+  <item>
+    <name>Vanilla Ice Cream</name>
+    <price>40</price>
+  </item>
+  <item>
+    <name>Strawberry Ice Cream</name>
+    <price>45</price>
+  </item>
+</priceList>

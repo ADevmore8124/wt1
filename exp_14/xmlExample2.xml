@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="student.xsl"?>
+
+<!DOCTYPE student SYSTEM "xmlExample2.dtd">
+<student>
+  <name>Arpita Dhanpal Devore</name>
+  <rollno>23</rollno>
+  <branch>Computer Science</branch>
+  <subjects>
+    <subject>XML and Web Technologies</subject>
+    <subject>Database Management System</subject>
+    <subject>Software Engineering</subject>
+  </subjects>
+</student>
